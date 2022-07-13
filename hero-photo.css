@@ -1,0 +1,318 @@
+:root {
+  --d: 15.6em;
+  --rel: 1;
+  --r: calc(.5*(1 + var(--rel))*var(--d) / 1);
+  --s: calc(2*var(--r) + var(--d));
+}
+
+.section-main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.follow-me{
+  display: none;
+}
+
+.container{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px dashed red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.container > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: calc(-0.5 * var(--d));
+  width: var(--d);
+  height: var(--d);
+  transform: rotate(calc(var(--i)*1turn/var(--m))) translate(var(--r)) rotate(calc(-1 * calc(var(--i)*1turn/var(--m))));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .follow-me{
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.my-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.need-to-hide{
+  display: none;
+}
+
+.my-img > img {
+  width: 450px;
+}
+
+.background-circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle--1, .circle--2 {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+}
+
+.circle--1{
+  background: #FFC8B7;
+  transform: translate(-80px, 90px);
+}
+
+.circle--2 {
+  background: #FDE6B4;
+  transform: translate(90px, -80px);
+}
+
+.card-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-card, .bottom-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-card{
+  margin-bottom: 150px;
+  position: relative;
+  left: -40px;
+}
+
+.bottom-card{
+  margin-top: 150px;
+  position: relative;
+  right: -40px;
+}
+
+.cardings-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 18px 30px;
+  width: 280px;
+}
+
+.card-details{
+  margin-left: 10px;
+}
+
+.card-heading{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+@media(max-width: 1240px){
+  :root {
+    --d: 12.5em;
+  }
+
+  .container{
+    width: 400px;
+    height: 400px;
+  }
+
+  .circle--1, .circle--2{
+    width: 260px;
+    height: 260px;
+  }
+
+  .circle--1 {
+    transform: translate(-67px, 68px);
+  }
+
+  .circle--2{
+    transform: translate(67px, -68px);
+  }
+
+  .cardings-style{
+    font-size: 14px;
+    padding: 15px 20px;
+    width: 220px;
+  }
+
+  .top-card img, .bottom-card img {
+    width: 44px;
+  }
+}
+
+@media(max-width: 1083px){
+  .bottom-card{
+    right: -2px;
+  }
+}
+
+@media(max-width: 1000px){
+  .rest-code-to-indent{
+    top: 30px;
+  }
+
+  .cardings-style{
+    width: 200px;
+    padding: 15px 25px;
+  }
+  .card-heading, .card-content{
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .card-heading{
+    font-size: 12px;
+  }
+
+  .card-content{
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 938px){
+  :root {
+    --d: 9.4em;
+  }
+  .container{
+    width: 300px;
+    height: 300px;
+  }
+
+  .my-img > img{
+    width: 350px;
+  }
+
+  .circle--1, .circle--2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle--1 {
+    transform: translate(-49px, 50px);
+  }
+
+  .circle--2 {
+    transform: translate(50px, -49px);
+  }
+
+  .container  a > img {
+    width: 28px;
+  }
+
+  .top-card img, .bottom-card img {
+    width: 32px;
+  }
+
+  .top-card{
+    margin-bottom: 100px;
+  }
+
+  .card-heading{
+    font-size: 12px;
+  }
+
+  .card-content{
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 868px){
+  .rest-code-to-indent{
+    top: 0;
+  }
+}
+
+@media(max-width: 764px){
+  .rest-code-to-indent{
+    top: 150px;
+  }
+  .container{
+    position: relative;
+  }
+  .container > div{
+    position: relative;
+  }
+  .top-card, .bottom-card {
+    display: none;
+  }
+  .background-circle {
+    display: none;
+  }
+  .container{
+    border: none;
+    top: auto;
+    left: auto;
+    transform: translate(0, 0);
+    display: flex;
+    margin-top: 36px;
+    height: 30px;
+    align-items: center;
+  }
+  .container > div{
+    top: auto;
+    left: auto;
+    transform: translate(0, 0);
+    margin: 0 10px;
+    height: 28px;
+    width: 28px;
+  }
+  .my-img{
+    display: none;
+  }
+
+  .container .follow-me{
+    display: block;
+    width: 120px;
+  }
+
+  .container > div  a > img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .end-of-era{
+    margin-top: 32px;
+  }
+}
+
+@media(max-width: 500px){
+  .about-me span {
+    font-size: 14px;
+  }
+
+  .about-me img {
+    width: 18px;
+  }
+}

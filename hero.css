@@ -1,0 +1,111 @@
+.hero-section{
+  margin-top: 200px;
+}
+
+.hero-container{
+  display: flex;
+  align-items: center;
+}
+
+.hero-part{
+  flex: 1;
+}
+
+.salutation{
+  font-size: 28px;
+}
+
+.full-name{
+  font-size: 36px;
+  color: #FD7E14;
+}
+
+.specifications{
+  font-size: 20px;
+  color: #23C1CC;
+  margin-bottom: 10px;
+}
+
+.end-of-era{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.download-btn{
+  border: none;
+  border-radius: 100px;
+  background: #FD7E14;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+.download-btn span {
+  color: #FFF;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.about-me{
+  display: flex;
+  align-items: center;
+}
+
+.about-me span {
+  color: #23C1CC;
+  font-weight: 700;
+  margin-right: 12px;
+  transition: all .3s ease-in-out;
+}
+
+.download-btn:hover{
+  background: linear-gradient(180deg, #FFC107 0%, #FD7E14 100%);
+}
+
+.about-me:hover span {
+  margin-right: 20px;
+  text-decoration: underline;
+}
+
+@media(max-width: 764px){
+  .hero-container{
+    flex-direction: column;
+  }
+  
+  .hero-section{
+    margin-top: 10px;
+  }
+
+  .salutation{
+    font-size: 24px;
+  }
+
+  .full-name{
+    font-size: 30px;
+    margin: 3px 0; 
+  }
+
+  .specifications{
+    font-size: 18px;
+  }
+
+  .brief-bio{
+    font-size: 14px;
+  }
+
+  .download-btn{
+    margin-right: 30px;
+  }
+
+  .download-btn span{
+    font-size: 14px;
+  }
+
+  .download-btn img {
+    width: 18px;
+  }
+}
