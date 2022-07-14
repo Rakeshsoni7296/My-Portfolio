@@ -316,3 +316,24 @@ img {
     width: 18px;
   }
 }
+
+@media(max-width: 358px){
+  .container > div{
+    margin: 0 5px;
+  }
+  .container > div a > img{
+    width: 18px;
+    height: 18px;
+  }
+  .container .follow-me{
+    width: 85px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .about-me span{
+    margin-right: 5px;
+  }
+  .download-btn{
+    margin-right: 12px;
+  }
+}

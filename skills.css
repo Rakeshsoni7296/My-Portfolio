@@ -117,3 +117,9 @@
     font-size: 12px;
   }
 }
+
+@media(max-width: 357px){
+  .skill-set > p{
+    width: 180px;
+  }
+}

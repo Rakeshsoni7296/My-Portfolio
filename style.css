@@ -215,6 +215,12 @@ nav{
   }
 }
 
+@media(max-width: 390px){
+  .header, .rest-code-to-indent{
+    padding: 0 10px;
+  }
+}
+
 /* Dominant classes */
 .link-active{
   color: #FD7E14;

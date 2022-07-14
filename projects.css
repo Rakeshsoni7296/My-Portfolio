@@ -202,6 +202,7 @@
   .project-card{
     width: 180px;
     margin: 15px 8px;
+    padding: 10px;
   }
   .project-category, .project-description, .complete-status > span:first-child, .date-comp, .hover-show-wrapper > div {
     font-size: 12px;
@@ -227,8 +228,45 @@
   .project-category, .project-description, .complete-status > span:first-child, .date-comp, .hover-show-wrapper > div {
     font-size: 10px;
   }
+  .complete-status > span:first-child{
+    margin-right: 3px;
+  }
+  .complete-status > span:last-child > img{
+    width: 14px;
+  }
   .project-nav{
     width: 340px;
+  }
+  .link-bar {
+    font-size: 13px;
+  }
+  .project-nav{
+    width: 280px;
+  }
+}
+
+@media(max-width: 390px){
+  .project-card{
+    padding: 8px;
+    margin: 8px 5px;
+  }
+}
+
+@media(max-width: 357px){
+  .project-card{
+    width: 200px;
+  }
+  .project-category, .project-description, .complete-status > span:first-child, .date-comp, .hover-show-wrapper > div{
+    font-size: 12px;
+  }
+  .project-nav{
+    width: 240px;
+  }
+  .link-bar{
+    font-size: 10px;
+  }
+  .project-section > p{
+    width: 180px;
   }
 }
 
