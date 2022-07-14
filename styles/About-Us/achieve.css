@@ -1,0 +1,56 @@
+.achievements{
+  margin-top: 100px;
+}
+
+.achieve-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.achieve-card{
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.achieve-info{
+  margin-left: 5px;
+}
+
+.achv-name{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.achv-place{
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+@media(max-width: 1231px) {
+  .achv-name{
+    font-size: 16px;
+  }
+  .achv-place{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 1140px){
+  .achieve-wrapper{
+    flex-direction: column;
+  }
+  .achieve-card{
+    margin: 10px 0;
+  }
+}
+
+@media(max-width: 624px) {
+  .achv-name{
+    font-size: 14px;
+  }
+  .achv-place{
+    font-size: 13px;
+  }
+}

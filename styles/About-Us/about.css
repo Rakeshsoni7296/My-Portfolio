@@ -1,0 +1,201 @@
+.section-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-header > div {
+  margin-right: 20px;
+}
+
+.about-info-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-info-wrapper > div {
+  flex: 1;
+}
+
+.about-info-wrapper > div:first-child {
+  margin-right: 5px;
+}
+
+.about-info-wrapper > div:last-child {
+  margin-left: 5px;
+}
+
+.about-me{
+  margin-top: 100px;
+}
+
+.hobby{
+  display: flex;
+  align-items: center;
+}
+
+.hobby-header{
+  margin: 15px 0;
+  color: #333;
+}
+
+.hobby{
+  margin: 5px 0;
+}
+
+.hobby > div:first-child{
+  margin-right: 10px;
+}
+
+.hobby > div:last-child{
+  color: #23C1CC;
+}
+
+.edu--name-cov{
+  display: none;
+}
+
+.education{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edu-card{
+  display: flex;
+}
+
+.smart-icon{
+  margin-right: 10px;
+}
+
+.smart-icon > img {
+  height: 100%;
+}
+
+.edu-info{
+  width: -webkit-fill-available;
+}
+
+.specialization-info, .spec-centre, .spec-resulting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialization-info > div:first-child, .spec-centre > div:first-child, .spec-resulting > div:first-child {
+  margin-right: 25px;
+}
+
+.specialization-info > div:last-child, .spec-centre > div:last-child, .spec-resulting > div:last-child {
+  text-align: end;
+}
+
+.specialization-info{
+  font-weight: 700;
+}
+
+.spec-name{
+  font-size: 18px;
+}
+
+.spec-centre{
+  margin: 3px 0;
+  font-weight: 500;
+}
+
+.edu-comp-date{
+  display: flex;
+  margin: 5px 0;
+}
+
+.edu-comp-date > div:first-child{
+  margin-right: 10px;
+}
+
+.edu-comp-date > div:last-child{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.percentile{
+  color: #F24E1E;
+  font-size: 18px;
+}
+
+
+@media(max-width: 1240px){
+  .spec-name{
+    font-size: 16px;
+  }
+  .specialization-info > div:last-child, .spec-centre > div{
+    font-size: 15px;
+  }
+  .percentile{
+    font-size: 17px;
+  }
+}
+
+@media(max-width: 964px){
+  .about-info-wrapper > div:first-child{
+    margin-right: 0;
+  }
+
+  .about-info-wrapper > div:last-child{
+    margin-left: 0;
+  }
+  .about-info-wrapper{
+    flex-direction: column;
+  }
+  .edu--name-cov{
+    display: block;
+    margin: 40px 0;
+    margin-bottom: 15px;
+  }
+  .edu-card{
+    margin: 10px 0;
+  }
+}
+
+@media(max-width: 624px) {
+  .hobby-header{
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .hobby > div {
+    font-size: 14px;
+  }
+  .hobby > div:first-child{
+    margin-right: 7px;
+  }
+  .edu--name-cov{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .hobby > div > img {
+    width: 16px;
+  }
+  .spec-name{
+    font-size: 14px;
+  }
+  .specialization-info > div:last-child, .spec-centre > div{
+    font-size: 13px;
+  }
+  .edu-comp-date{
+    align-items: center;
+  }
+  .edu-comp-date > div:first-child{
+    margin-right: 5px;
+  }
+  .edu-comp-date > div:first-child > img {
+    width: 14px;
+    height: 14px;
+  }
+  .edu-comp-date > div:nth-child(2){
+    font-size: 12px;
+  }
+  .percentile{
+    font-size: 14px;
+  }
+}
