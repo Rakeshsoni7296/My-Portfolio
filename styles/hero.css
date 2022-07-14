@@ -71,10 +71,6 @@
   text-decoration: underline;
 }
 
-.about-me:hover span{
-  margin-right: 10px;
-}
-
 @media(max-width: 764px){
   .hero-container{
     flex-direction: column;
@@ -111,5 +107,11 @@
 
   .download-btn img {
     width: 18px;
+  }
+}
+
+@media(max-width: 358px){
+  .about-me:hover span{
+    margin-right: 10px;
   }
 }
