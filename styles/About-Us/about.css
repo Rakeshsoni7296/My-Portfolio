@@ -199,3 +199,15 @@
     font-size: 14px;
   }
 }
+
+@media(max-width: 450px){
+  .section-header > div{
+    margin-right: 10px;
+  }
+  .section-header > div > img {
+    width: 24px;
+  }
+  .section-header > h2 {
+    font-size: 18px;
+  }
+}
