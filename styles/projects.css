@@ -23,6 +23,7 @@
 .project-cat-img{
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .project-cat{
@@ -81,6 +82,37 @@
 
 .project-tech > div:last-child {
   font-weight: 700;
+}
+
+@media(max-width: 766px) {
+  .project-card{
+    width: 240px;
+  }
+  .project-cat-img > div > img{
+    width: 240px;
+  }
+  .project-cat{
+    font-size: 14px;
+  }
+  .project-output{
+    font-size: 14px;
+  }
+  .project-cat{
+    border-radius: 0 5px 0 2px;
+  }
+  .prj-desc{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .start-date > div {
+    font-size: 14px;
+  }
+  .prj-status > div {
+    font-size: 14px;
+  }
+  .project-tech > div {
+    font-size: 14px;
+  }
 }
 
 /* dominants style */
