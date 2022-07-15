@@ -1,0 +1,151 @@
+@keyframes animateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(3.6deg * var(--angle)));
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skills-representation{
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.skills-representation > h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-wrapper .skills-card{
+  position: relative;
+  width: 200px;
+  height: 230px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.skills-wrapper .skills-card .percent{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.skills-wrapper .skills-card .percent svg{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.skills-wrapper .skills-card .percent svg circle{
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2px;
+  /* stroke: #FDE6B4; */
+  stroke: #FEF8E6;
+  transform: translate(5px, 5px);
+}
+
+.skills-wrapper .skills-card .percent svg circle:nth-child(2){
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--angle))/100);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+.dot{
+  position: absolute;
+  inset: 5px;
+  z-index: 9;
+  animation: animateDot 2s linear forwards;
+}
+
+.dot::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--clr);
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.number{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+.number h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+.number h2 span{
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.5em;
+}
+
+.number > div > img {
+  width: 50px;
+}
+
+.number p {
+  font-weight: 300;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 5px;
+}
+
+@media(max-width: 847px) {
+  .skills-representation{
+    margin-bottom: 80px;
+  }
+}
+
+@media(max-width: 764px){
+  .skills-representation{
+    margin-bottom: 0;
+  }
+}

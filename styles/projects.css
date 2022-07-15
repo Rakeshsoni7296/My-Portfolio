@@ -1,0 +1,93 @@
+.project-section{
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.project-section > h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card{
+  width: 300px;
+  margin: 25px 20px;
+  border-radius: 4px;
+}
+
+.project-cat-img{
+  position: relative;
+  overflow: hidden;
+}
+
+.project-cat{
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  color: #FFF;
+  padding: 6px 20px;
+  background: #23C1CC;
+  border-radius: 0 10px 0 4px;
+}
+
+.project-cat-img > div > img {
+  width: 300px;
+  transition: transform .2s;
+}
+
+.project-card:hover .project-cat-img > div > img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+.project-output{
+  font-weight: 700;
+  color: #666;
+  margin: 6px 0;
+}
+
+.prj-desc{
+  margin-bottom: 8px;
+}
+
+.start-date{
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-date > div:last-child{
+  font-weight: 500;
+}
+
+.prj-status{
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+
+.prj-status > div:last-child {
+  font-weight: 500;
+}
+
+.project-tech{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-tech > div:last-child {
+  font-weight: 700;
+}
+
+/* dominants style */
+.done {
+  color: #54A044;
+}
+
+.run {
+  color: #F24E1E;
+}
