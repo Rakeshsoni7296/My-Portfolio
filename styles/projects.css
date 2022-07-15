@@ -84,6 +84,12 @@
   font-weight: 700;
 }
 
+@media(max-width: 847px) {
+  .project-section{
+    margin-bottom: 100px;
+  }
+}
+
 @media(max-width: 766px) {
   .project-card{
     width: 240px;
@@ -112,6 +118,12 @@
   }
   .project-tech > div {
     font-size: 14px;
+  }
+}
+
+@media(max-width: 764px) {
+  .project-section{
+    margin-bottom: 0;
   }
 }
 
