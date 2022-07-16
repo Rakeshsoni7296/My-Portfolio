@@ -1,0 +1,28 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakeshsoni7296/My-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rakeshsoni7296/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Rakeshsoni7296/My-Portfolio#readme",
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.6.2",
+    "@parcel/compressor-gzip": "^2.6.2",
+    "@parcel/reporter-bundle-analyzer": "^2.6.2",
+    "parcel": "^2.6.2"
+  }
+}
