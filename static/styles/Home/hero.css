@@ -66,7 +66,7 @@
   background: linear-gradient(180deg, #FFC107 0%, #FD7E14 100%);
 }
 
-.about-me:hover a {
+.about-me:hover span {
   margin-right: 20px;
   text-decoration: underline;
 }
