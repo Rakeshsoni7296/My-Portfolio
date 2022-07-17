@@ -41,10 +41,10 @@
   align-items: center;
   justify-content: center;
   margin-right: 60px;
-  cursor: pointer;
+  cursor: default;
 }
 
-.download-btn span {
+.download-btn a {
   color: #FFF;
   font-size: 16px;
   margin-right: 12px;
@@ -66,7 +66,7 @@
   background: linear-gradient(180deg, #FFC107 0%, #FD7E14 100%);
 }
 
-.about-me:hover span {
+.about-me:hover a {
   margin-right: 20px;
   text-decoration: underline;
 }
@@ -101,7 +101,7 @@
     margin-right: 30px;
   }
 
-  .download-btn span{
+  .download-btn a{
     font-size: 14px;
   }
 
