@@ -41,10 +41,9 @@
   align-items: center;
   justify-content: center;
   margin-right: 60px;
-  cursor: default;
 }
 
-.download-btn a {
+.download-btn span {
   color: #FFF;
   font-size: 16px;
   margin-right: 12px;
@@ -101,7 +100,7 @@
     margin-right: 30px;
   }
 
-  .download-btn a{
+  .download-btn span{
     font-size: 14px;
   }
 
