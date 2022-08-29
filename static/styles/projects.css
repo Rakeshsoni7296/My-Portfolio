@@ -28,7 +28,8 @@
 
 .project-cat{
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
+  z-index: 2;
   left: 0;
   color: #FFF;
   padding: 6px 20px;
