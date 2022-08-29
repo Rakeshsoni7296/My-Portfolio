@@ -82,6 +82,7 @@
 
 .project-tech > div:last-child {
   font-weight: 700;
+  color: #636363;
 }
 
 @media(max-width: 847px) {
