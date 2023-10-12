@@ -9,6 +9,7 @@
 }
 
 .achieve-card{
+  width: 480px;
   display: flex;
   align-items: center;
   margin: 10px 20px;
